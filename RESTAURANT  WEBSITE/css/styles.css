@@ -1,0 +1,97 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background: block#333;
+    color: #ffffff00;
+    padding: 1rem 0;
+}
+
+header h1 {
+    float: left;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    color: #ffffff00;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('../images/spicy.JPEG') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff00;
+    text-align: center;
+    
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #ff6347;
+    color: #ffffff00;
+    text-decoration: none;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+section {
+    padding: 2rem 0; 
+}
+
+footer {
+    background: #33333300;
+    color: #ffffff00;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1, header nav {
+        float: none;
+        text-align: center;
+    }
+    
+    header nav ul {
+        padding: 0;
+    }
+    
+    header nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    
+    .hero {
+        height: 100vh;
+    }
+}
